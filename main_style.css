@@ -4,4 +4,5 @@
 .homepage{
     background:url("image/itdesk.jpg");
 background-position:cover;
+    background-repeat:no-repeat;
 }
