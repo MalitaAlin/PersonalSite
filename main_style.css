@@ -29,11 +29,10 @@ body, html {
   .bg-image {
     /* The image used */
     background-image: url("image/itdesk.jpg");
-    
     /* Add the blur effect */
     filter: blur(1px);
     -webkit-filter: blur(1px);
-    
+    opacity:0.8;
     /* Full height */
     height: 100%; 
     
