@@ -1,9 +1,6 @@
-body, html {
-  height: 100%;
-}
+
 
 .homepage{
-<<<<<<< Updated upstream
   /* The image used */
    background:url("image/itdesk.jpg");
 
@@ -15,17 +12,8 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*
-=======
-    background:url("image/itdesk.jpg");
-    opacity:0.9;
-    background-position: center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    height:60%;
-    width:95%;
-      overflow:hidden;
-}
+/* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*/
+
 
 body, html {
     height: 100%;
@@ -70,4 +58,3 @@ body, html {
     padding: 20px;
     text-align: center;
   }
->>>>>>> Stashed changes
