@@ -3,11 +3,16 @@
 /* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*/
 .homepage{
     background:url("image/itdesk.jpg");
-    opacity:0.9;
-    background-position: center;
-    background-size:contain;
-    background-repeat:no-repeat;
-     background-size: 180% 190%;
-      overflow:hidden;
-      position:absolute;
+ background-position: center;
+ background-size:contain;
+ opacity:.5;
+ font-size: 105%;
+ height:60%;
+ width:95%;
+   overflow:hidden;
+ min-height:110vh;
+  position:absolute;
+  justify-content: center;
+     margin:-4%;
+    padding:-10%;
 }
