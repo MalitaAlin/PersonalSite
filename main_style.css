@@ -1,11 +1,17 @@
-
-
-/* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*/
-.homepage{
-    background:url("image/itdesk.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center center;
-   
-    top:0; left:0;
+body, html {
+  height: 100%;
 }
+
+.homepage{
+  /* The image used */
+   background:url("image/itdesk.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*
