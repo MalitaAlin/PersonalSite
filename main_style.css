@@ -3,8 +3,6 @@
 /* homepage background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*/
 .homepage{
     background:url("image/itdesk.jpg");
-    width:100%;
-    height:100%;
     opacity:0.9;
     background-position: center;
     background-size:contain;
