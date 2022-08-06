@@ -1,2 +1,2 @@
 # PersonalSite
- Website created for self-promotion purposes
+ Site for self-promotion
