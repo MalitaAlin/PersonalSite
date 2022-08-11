@@ -4,16 +4,23 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
+    overflow-x:hidden;
   }
   
+  .fade-in { animation: fadeIn 1s; } /*fadeIn is the animation name*/
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
   * {
     box-sizing: border-box;
   }
   
-  .bg-image {
+    .bg-image {
     /* The image used */
-    background-image: url("image/itdesk.jpg");
+   /*background-image: url("image/itdesk.jpg");
     /* index page background image attributed to Luca Bravo on Unsplash, https://unsplash.com/photos/9l_326FISzk*/
     /* Add the blur effect */
     filter: blur(1px);
@@ -21,114 +28,248 @@ body, html {
     opacity:0.8;
     /* Full height */
     height: 100%; 
-    
+   
     /* Center and scale the image nicely */
-    background-position: center;
+   background-position:absolute;
     background-repeat: no-repeat;
     background-size: cover;
+    top:200px;
+  } 
+  
+   /*Title Section*/
+
+   #title-box{
+    width:101%;
+  margin:-1px;
+  padding-right:-2px;
+   }
+
+/*Github*/
+   .githubbox{
+    position:absolute;
+    top:15px; 
+    right:4%;
+    height:45px;
+    width:50px;
+
+    background-color: transparent;
+    color:#050606;
+    border-radius:  40px;
+    font-size:1.75em;
+      padding:-25px;
+   }
+
+
+.githubbox .githublink{
+  font-size:0.7em;
+  color:#050606;
+
+  background-color: transparent;
+  text-decoration:none;
+ 
+
+border-radius:55px 55px 35px 35px;
+  top: -8px;
+  left:-12px;
+  position:relative;
+}
+
+ .githublink:hover,  .githublink:focus{
+  color:#ffffff;
+  background-color: rgb(13, 13, 13);
+  cursor:pointer;
+}
+
+/*Card Head*/
+   #title-box .card-header, #title-box .card-body, #title-box .card-footer {
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:0;
+    border:0px;
+    padding:-4px;
+  }
+
+.title-icon{
+  height:22%;
+  min-height:180px;
+  max-height:400px;
+
+  width:22%;
+  min-width:200px;
+  max-width:400px;
+
+  margin-top:20px;
+  position:relative;
+  z-index:1;
+  padding:3px;
+  background-color: #f1f1f1;
+ border-radius:75px  75px 15px 15px  ;
+}
+
+.card-body{
+  margin-bottom:-2px;
+}
+
+ .card-body .title-text{
+   width:50%;
+   margin:-44px 25% 10px 25%;
+    line-height:4;
+     color: white;
+     font-weight: bold;
+   
+     padding:20px  20px 15px 20px;
+     border-radius:10px;
+     border: 5px solid #f1f1f1;
+     border-top:20px  solid #f1f1f1;
+     background-color: rgb(12, 9, 9); /* Fallback color */
+     background-color: rgba(0, 0, 0, 0.5); /*Black w/opacity/see-through */
+  }
+
+.card-body .title-text h1{
+margin:10px 0 25px 0;
+font-size:2.1em;
+}
+
+.card-body .title-text h5{
+  margin-bottom:20px;
+  font-size:1.2em;
+  text-align:center;
+  line-height:1.7;
+  margin-top:20px;
+  }
+
+
+  /*Navigation Bar*/
+  #title-box .card-footer{
+    border:0;
+    margin-bottom:1px;
+    padding:5px;
   }
   
-  .title-box{
-    
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 55%;
-    height:25%;
-    min-width:310px;
+#title-box .navbar{
+width:58%;
+border-radius:20px;
 
-    padding: 1%;
-    position: absolute;
-    top: 80px;
-    left: 45%;
-    margin-top:10px;
-    
-  }
-
-  .title-image {
-    left: 10%;
-float:left;
-z-index:3;
-  min-width:110px;
-  width:23%;
-   min-height: 110px;
-   height:100%;
-
-   margin:  0 8px 0;
-   background-color: #f1f1f1;;
-   border-radius:85px;
-   position: absolute;
-  }
- 
-  .title-text {
-    top:12%;
-    position: absolute;
-margin-left:25%;
-padding-left:80px;
-height:90%;
-width:70%;
-
-    color: white;
-    font-weight: bold;
-    font-size:max(16px,120%);
-    border-radius:10px;
-    border: 5px solid #f1f1f1;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  }
-
-.nav-bar{
-  background-color:  rgba(232, 218, 218, 0.514); 
-  font-size:110%; 
-  padding: 1%;
-  padding-bottom:0%;
-  border-radius:10px;
-margin:60px 20px 20px 20px;
-
-font-weight: bold;
-color: #343a40;
- letter-spacing: 1px; 
-
-     width: 75%;
-     height:6%;
-     transform: translate(-50%, -50%);
-     position: absolute;
-     top: 22%;
-     left: 50%;
-     z-index: 2;
+padding-right:12px;
+margin:0 0 0 21%;
 }
+
+#sectionbar .btn-secondary{
+  background-color:#212529;
+
+margin:8px 0 8px 0;
+border:0;
+}
+
+#sectionbar  .btn-secondary:hover,#sectionbar  .btn-secondary:focus{
+background-color:#f1f1f1;
+color:#050606;
+}
+
+
+@media (min-width:1200px) {
+  .navbar-brand{
+    margin:0 10% 0 15px;
+  padding-right:16%;
+  }
+  .nav-item{
+    margin:0 14%;
+    width:100%;
+    }
+
+    #sectionbar .btn-secondary{
+      width:150%;
+    }
+}
+
+@media (max-width:1200px) and (min-width:768px){
+   
+  .navbar-brand{
+    margin:0 10% 0 15px;
+    padding-right:6%;
+
+  }
+
+  .nav-item{
+    
+    padding:5px;
+    width:auto;
+    }
+    
+}
+
+@media  (max-width:767px){
+  .navbar-brand{
+    margin:0 10% 0 15px;
+
+  }
+
+  .nav-item{
+padding-left:0;
+    }
+    
+}
+
+.navbar-brand{
+  font-size:2.1em;
+  margin-bottom:0.5px;
+}
+
+/*Sections*/
 
 .info-box{
   background-color:  rgb(235, 238, 238); 
-  margin:2% 2% 2% 2%;
+  margin:2%;
   border:solid 2px black;
-  padding:2px;
+  padding:10px 20px;
   border-radius:10px;
-  margin-top: 10px;
+
 
   font-weight: bold;
   color: #050606;
 
-  width: 90%;
+  width: 100%;
      height:58%;
-     transform: translate(-50%, -50%);
-     position: absolute;
-     top: 55%;
-     left: 50%;
+     
+     
 }
+
+ /*experiment start*/ 
+#carousel{
+  padding:7% 5%;
+  text-align:center;
+  background-color:aquamarine;
+  color:antiquewhite;
+  font-size:3remm;
+  line-height:1.5;
+
+}
+
+.carousel-img{
+  width:10%;
+  border-radius:10px;
+  margin:20px;
+}
+
+#press{
+ padding-bottom: 3%;
+  
+}
+.press-logo{
+  width:15%;
+  margin:20px;
+
+} /*experiment end*/ 
 
 footer{
 background-color: rgb(75, 91, 91);
 opacity:.8;
-position:absolute;
-bottom: 0;
-top:90%;
-left:0%;
-margin-top:2%;
+margin:0%;
 /* Height of the footer*/ 
 height: auto;
 width:100%;
 border-radius: 10px;
-padding:0% 1%;
 color:rgb(255, 255, 254);
-text-align:left;
+text-align:center;
 }
