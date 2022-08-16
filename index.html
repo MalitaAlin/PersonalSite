@@ -62,40 +62,173 @@
     <li class=" nav-item">
       <button class="btn btn-secondary " href=""> Programming <i class="fa-solid fa-laptop-code"></i></button></li>
     <li class=" nav-item">
-      <button class=" btn btn-secondary" href=""> Art <i class="fa-solid fa-pen-to-square"></i></button></li> </ul>
+      <button class=" btn btn-secondary" href="artsection"> Art <i class="fa-solid fa-pen-to-square"></i></button></li> </ul>
     </div>
 </nav> </div>
 </section>
 
-<section class="info-box">
-  <div class="row">
-    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:blue; border:1px solid">
-        col-lg-3 col-md-4
-    </div>
-     <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:blue; border:1px solid">
-        col-lg-3 col-md-4
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:blue; border:1px solid">
-       col-lg-3 col-md-4
-    </div>
-     <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:blue; border:1px solid">
-        col-lg-3 col-md-4
-    </div>
-</div> </section>
+<section id="artsection" class="info-box">
 
-<section id="carousel">
-  <img class="carousel-img" src="image/Readytodrop.jpg"> 
+<!-- Images used to open the lightbox -->
+<div class="sectiontitle">Art Gallery</div>
+<div class="row">
+  <div class="column-art col-lg-3  col-md-4 col-sm-6">
+    <img src="image/art/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6" >
+    <img src="image/art/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6 ">
+    <img src="image/art/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+    <img src="image/art/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+    <img src="image/art/img5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+    <img src="image/art/img6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+    <img src="image/art/img7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+    <img src="image/art/img8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img  class="vertImg" src="image/art/img1.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img class="vertImg" src="image/art/img2.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img  class="vertImg" src="image/art/img3.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img class="vertImg" src="image/art/img4.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img class="horImg" src="image/art/img5.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img class="vertImg" src="image/art/img6.jpg" >
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img class="vertImg" src="image/art/img7.jpg" >
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img class="horImg" src="image/art/img8.jpg" >
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="slidecaption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="row">
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img1.jpg" onclick="currentSlide(1)" alt="God of Unity and Contradiction">
+      <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4>  
+      </div>
+    </div>
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img2.jpg" onclick="currentSlide(2)" alt="Cactus Giant">
+      <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4>  
+      </div>
+    </div>
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img3.jpg" onclick="currentSlide(3)" alt="White Rot Titan">
+      <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4>  
+      </div>
+    </div>
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img4.jpg" onclick="currentSlide(4)" alt="Above">
+      <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4>  
+      </div>
+    </div> 
+  
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img5.jpg" onclick="currentSlide(5)" alt="Above">
+      <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4>  
+      </div>
+    </div> 
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img6.jpg" onclick="currentSlide(6)" alt="Above">
+    </div> 
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img7.jpg" onclick="currentSlide(7)" alt="Above">
+    </div> 
+
+    <div class="column-art col-lg-3 col-md-4 col-sm-6">
+      <img class="demo" src="image/art/img8.jpg" onclick="currentSlide(8)" alt="Above">
+    </div> 
+
+  </div>
+  </div>
+</div>
+
+  </section>
+
+
+<section id="codesection" class="info-box">
+  <div class="sectiontitle">Digital competences</div>
+
+  <div class="codeitem">Web development<br>
+  Front-End Development - HTML, CSS, Javascript, Bootstrap,jQuery
+<br> Back-End development - Node.js + Express</div>
+
+<div class="codeitem">Programming<br>
+  C, C++  - Algoritms
+<br> Java - OOP </div>
+    
+<div class="codeitem">Other Skills<br>
+  Microsoft Word, Powerpoint, Excel
+  <br>AutoCAD
+</div>
+
+
 
 </section>
 
-<section id="press">
 
-</section>
-
-
-   <footer>
-  <h5>Malita Alin   &#169 2022</h5>
+  <footer>
+ <h5>Malita Alin   &#169 2022</h5>
 </footer> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="javascript.js" charset="utf-8"></script>
 
 </body>
 
