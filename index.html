@@ -101,7 +101,86 @@
 </section>
 
 
-<div id="includedArtSection"></div>
+<section id="artsection" class="info-box">
+
+  <!-- Images used to open the lightbox -->
+  <div class="sectiontitle">Art Gallery</div>
+<!-- Art Images + captions sections-->
+  <div class="row">
+
+    <div class="column-art col-lg-3  col-md-4 col-sm-6">
+      <img src="image/art/img1.jpg" onclick="openModal();currentSlide(1)" class="gallery-item hover-shadow">
+    </div>  <div hidden class="captions"><h3>God of Unity and Contradiction</h3> <br> <h4> -Fantasy-  </h4> </div>
+   
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6" >
+      <img src="image/art/img2.jpg" onclick="openModal();currentSlide(2)" class="gallery-item hover-shadow">
+    </div>   <div hidden class="captions"><h3>Cactus Giant</h3> <br> <h4> -Fantasy-  </h4> </div>
+  
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6 ">
+      <img src="image/art/img3.jpg" onclick="openModal();currentSlide(3)" class="gallery-item hover-shadow">
+    </div>   <div hidden class="captions"><h3>White Rot Titan</h3> <br> <h4> -Fantasy-  </h4> </div>
+    
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+      <img src="image/art/img4.jpg" onclick="openModal();currentSlide(4)" class="gallery-item hover-shadow">
+    </div>  <div hidden class="captions"><h3>Among the Fungi</h3> <br> <h4> -Fantasy-  </h4> </div>
+    
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+      <img src="image/art/img5.jpg" onclick="openModal();currentSlide(5)" class="gallery-item hover-shadow">
+    </div>  <div hidden class="captions"><h3>Elder Glutton Beast </h3> <br> <h4> -Fantasy-  </h4> </div>
+   
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+      <img src="image/art/img6.jpg" onclick="openModal();currentSlide(6)" class="gallery-item hover-shadow">
+    </div>  <div hidden class="captions"><h3>Under Many Eyes</h3> <br> <h4> -Fantasy-  </h4> </div>
+   
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+      <img src="image/art/img7.jpg" onclick="openModal();currentSlide(7)" class="gallery-item hover-shadow">
+    </div> <div hidden class="captions"><h3>No One's King</h3> <br> <h4> -Fantasy-  </h4> </div>
+  
+    <div class="column-art  col-lg-3 col-md-4 col-sm-6">
+      <img src="image/art/img8.jpg" onclick="openModal();currentSlide(8)" class="gallery-item hover-shadow">
+    </div> <div hidden class="captions"><h3>Tower Bench</h3> <br> <h4> -Fantasy-  </h4> </div>
+
+  </div>
+  
+  <!-- The Modal/Lightbox, sets format while javascript modifies the content inside -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="slideImg" src=""></img>
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text, gets filled by javascript-->
+      <div class="caption-container">
+        <div id="slidecaption"></div>
+      </div>
+  
+      <!-- Thumbnail image controls, gets filled by javascript-->
+      <div class="row">
+      <div class="column-art col-3">
+        <img class="demo" src="" onclick="" >
+      </div>
+      <div class="column-art col-3 ">
+        <img class="demo" src="" onclick="" >
+      </div>
+      <div class="column-art col-3 ">
+        <img class="demo" src="" onclick="">
+      </div>
+      <div class="column-art col-3 ">
+        <img class="demo" src="" onclick="">
+      </div> 
+    </div>
+
+    </div>
+  </div>
+  
+    </section>
 
   <footer>
  <h5>Malita Alin   &#169 2022</h5>

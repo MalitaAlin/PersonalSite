@@ -239,32 +239,7 @@ margin-left:-3%;
      
 }
 
- /*experiment start*/ 
-#carousel{
-  padding:7% 5%;
-  text-align:center;
-  background-color:aquamarine;
-  color:antiquewhite;
-  font-size:3remm;
-  line-height:1.5;
 
-}
-
-.carousel-img{
-  width:10%;
-  border-radius:10px;
-  margin:20px;
-}
-
-#press{
- padding-bottom: 3%;
-  
-}
-.press-logo{
-  width:15%;
-  margin:20px;
-
-} /*experiment end*/ 
 
 footer{
 background-color: rgb(75, 91, 91);
@@ -296,7 +271,7 @@ text-align:center;
   margin:8px 0px;
 }
 .column-art img{
-  width:60%; /*art size*/
+  height:220px; /*art size*/
   border-radius:10px;
 }
 
@@ -345,35 +320,31 @@ text-align:center;
   cursor: pointer;
 }
 
-/* Hide the slides by default */
-.vertImg{
-  height:70%;
-  width:70%;
-}
-
-.horImg{
-  height:120%;
-  width:120%;
-}
-
-.mySlides{
-  background:url('image/backgrounds/artslidebg.png');
+.mySlides{ /*slidesection*/
+  background:url('image/backgrounds/artslidebg.jpg');
   background-size:cover;
   width:auto;
   height:auto;
 }
 
+.slideImg{
+height:75%;
+width:75%;
+}
 
-.captions{
+.captions{ 
   visibility:hidden;
-  background:rgba(29, 28, 28, 0.5);
-  
 }
 
- #sidecaption{
-  background:rgba(29, 28, 28, 0.5);
-
+/* Caption box*/
+.caption-container {
+  text-align: center;
+  background-color: rgba(59, 57, 57, 0.7);
+  border-radius:15px 15px 35px  35px   ;
+  padding: 4px 16px;
+  color: white;
 }
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -418,18 +389,11 @@ text-align:center;
   top: 1px;
 }
 
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 4px 16px;
-  color: white;
-}
-
-
 
 img.demo {
   opacity: 0.6;
+  max-width: 70%;
+   height: auto;
 }
 
 .active,
