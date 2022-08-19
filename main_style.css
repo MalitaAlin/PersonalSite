@@ -7,10 +7,10 @@ body, html {
     overflow-x:hidden;
   }
   
-  .fade-in { animation: fadeIn 1s; } /*fadeIn is the animation name*/
+  .fade-in { animation: fadeIn 2s; } /*fadeIn is the animation name*/
 
   @keyframes fadeIn {
-    0% { opacity: 0; }
+    0% { opacity: 0.2; }
     100% { opacity: 1; }
   }
 
@@ -80,7 +80,7 @@ border-radius:55px 55px 35px 35px;
   cursor:pointer;
 }
 
-/*Card Head*/
+/*Title Head*/
    #title-box .card-header, #title-box .card-body, #title-box .card-footer {
     background: #355C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
@@ -91,11 +91,11 @@ border-radius:55px 55px 35px 35px;
   }
 
 .title-icon{
-  height:22%;
+  height:21%;
   min-height:180px;
   max-height:400px;
 
-  width:22%;
+  width:21%;
   min-width:200px;
   max-width:400px;
 
@@ -109,6 +109,7 @@ border-radius:55px 55px 35px 35px;
 
 .card-body{
   margin-bottom:-2px;
+  min-width:480px;
 }
 
  .card-body .title-text{
@@ -209,6 +210,9 @@ color:#050606;
 padding-left:0;
     }
     
+   .card-body{
+margin-left:-3%;
+   }
 }
 
 .navbar-brand{
@@ -301,7 +305,7 @@ text-align:center;
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 70%;
@@ -353,6 +357,8 @@ text-align:center;
 }
 
 .mySlides{
+  background:url('image/backgrounds/artslidebg.png');
+  background-size:cover;
   width:auto;
   height:auto;
 }
