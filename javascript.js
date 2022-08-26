@@ -40,8 +40,13 @@ function openModal() {
       slides.css("display","none");
       thumbnails.removeClass("active");
       
+      var targetart="image/art/img"+slideIndex+".jpg";
+      $(".slideImg").attr("src",targetart); 
+
+      
+
       slides.fadeToggle(500);//fades-in slide
-    $(".slideImg").attr("src","image/art/img"+slideIndex+".jpg"); //sets slideImd to correspondent image from gallery
+    //sets slideImd to correspondent image from gallery
     slides.css("display","block");//slide is made visible
     
 
