@@ -1,6 +1,5 @@
-/* // include sections as separate html files  
-  $(document).ready($("#includedArtSection").load("art.html")
-  ); */
+ // include sections as separate html files  
+
 
 // Open the Modal art gallery functions -- START
 function openModal() {

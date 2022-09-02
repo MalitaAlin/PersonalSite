@@ -22,6 +22,7 @@
 </head>
 
 <body class="fade-in">
+
  <section id="title-box" >
   <div class="card">
     <div class="card-header">
@@ -42,27 +43,30 @@
       </div> </h5>
     </div> 
   </div> 
+
+  <div class="card-footer"> 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-brand">Sections</div> <!--Navbar title-->
+      <!--Navbar adaptable to screen size with toggle for small screen-->
+      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#sectionbar" aria-controls="sectionbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="sectionbar">
+    <!--Navbar content-->
+      <ul class="navbar-nav "> 
+        <li class=" nav-item">
+        <button class=" btn btn-secondary " onclick="location.href='#homesection'" type="button"> About Me <i class="fa-solid fa-house"></i></button> </li>
+        <li class=" nav-item">
+          <button class="btn btn-secondary " onclick="location.href='#codesection'" type="button"> Programming <i class="fa-solid fa-laptop-code"></i></button></li>
+        <li class=" nav-item">
+          <button class=" btn btn-secondary" onclick="location.href='#artsection'" type="button"> Art <i class="fa-solid fa-pen-to-square"></i></button></li> </ul>
+        </div>
+    </nav> </div>
+
 </div> 
 
-<div class="card-footer">
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-brand">Sections</div> <!--Navbar title-->
-  <!--Navbar adaptable to screen size with toggle for small screen-->
-  <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#sectionbar" aria-controls="sectionbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" ></span>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="sectionbar">
-<!--Navbar content-->
-  <ul class="navbar-nav "> 
-    <li class=" nav-item">
-    <button class=" btn btn-secondary " onclick="location.href='#homesection'" type="button"> Home <i class="fa-solid fa-house"></i></button> </li>
-    <li class=" nav-item">
-      <button class="btn btn-secondary " onclick="location.href='#codesection'" type="button"> Programming <i class="fa-solid fa-laptop-code"></i></button></li>
-    <li class=" nav-item">
-      <button class=" btn btn-secondary" onclick="location.href='#artsection'" type="button"> Art <i class="fa-solid fa-pen-to-square"></i></button></li> </ul>
-    </div>
-</nav> </div>
+
 </section>
 
 
@@ -70,8 +74,37 @@
   About 
   Romanian student at UTCN
   Hobbies: art, biology, chemistry, nature in general. Great fondness for animals . 
-  Programming has its own charm.
- 
+  Programming has its own charm. <i class="fa-solid fa-mushroom" ></i> 
+  <h3>Interests:</h3>  <i class="fa-solid fa-angles-right"></i> Zoology, Mushrooms and Plants
+  <br><i class="fa-solid fa-angles-right"></i>Fantasy and Sci-Fi works, movies, books
+  <br><i class="fa-solid fa-angles-right"></i>Games such as Pokemon, Hollow Knight, Subnautica etc.
+  <br><i class="fa-solid fa-angles-right"></i>Animation and animated content
+  <br><i class="fa-solid fa-angles-right"></i>Character and monster design, worldbuilding</p>
+   <!-- Moodboard --------------->
+ <div class="card  bg-light p-2 mb-5 interest-box border-0" >
+  <div class="row no-gutters">
+  <div class="col-6 col-lg-3 p-2">
+  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80); "></div>
+  </div>
+
+  <div class="col-6 col-lg-3 p-2">
+  <div class="w-100 bg-faded interest-img" style="padding-bottom: 100%; 
+      background-image: url(https://images.unsplash.com/photo-1598525317424-bc58218b48cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYXZlbGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); 
+  background-size: cover; background-position: center; border-radius: 8px;"></div>
+  </div>
+
+  <div class="col-6 col-lg-3 p-2">
+  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
+  </div>
+
+  <div class="col-6 col-lg-3 p-2">
+  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1573350926865-cf0d512fd504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
+  </div> 
+ </div>
+</div>
+  
+ Contact: github page, gmail account
+ https://carpathianlion.carrd.co/
 
 </section>
 
@@ -125,15 +158,16 @@
 </div>
 
 <div> <h3>Github Projects: </h3>
-  ReadySetRoll<i class="fa-solid fa-dice"></i> https://not-a-platypus.github.io/ReadySetRoll/ 
-  --- HigherLowerGame ----<i class="fa-solid fa-arrows-up-down"></i> https://github.com/Not-A-Platypus/HighLow
+  <a href="https://not-a-platypus.github.io/ReadySetRoll/">ReadySetRoll<i class="fa-solid fa-dice"></i>  </a>
+  <a href=" https://github.com/Not-A-Platypus/HighLow" >HigherLowerGame ----<i class="fa-solid fa-arrows-up-down"></i></a>
+<a href="https://not-a-platypus.github.io/PokemonHighLow/"> --- Pokemon MiniGame ----<i class="fa-solid fa-arrows-up-down"></i> </a>
   Contact me regarding programming or web development here 
 </div>
 </div>
 </section>
 
 
-<section id="artsection" class="info-box">
+<section id="artsection" class="art-box">
   <!-- Images used to open the lightbox -->
   <div class="sectiontitle">Art Gallery</div>
 <!-- Art Images + captions sections-->
@@ -198,9 +232,6 @@
     <div class="column-art  col-lg-2 col-md-4 col-sm-4">
       <img src="image/art/img15.jpg" onclick="openModal();currentSlide(15)" class="gallery-item  hover-shadow horizontalImg">
     </div> <div hidden class="captions"><h3>A time to rest</h3>  <h4> -Fantasy-  </h4><h6>Posted on 12.04.2022</h6> </div>
-
-
-  </div>
   
   <!-- The Modal/Lightbox, sets format while javascript modifies the content inside -->
   <div id="myModal" class="modal">
@@ -238,8 +269,41 @@
     </div>
   
     </div>
-    Contact me regarding art here 
-  </div>
+  </div> 
+</div>
+     <!-- SOCIAL MEDIA LINKS -- use "font awesome" icons -- erase or add icons & links based on what you need -->
+     Commission Status: Open
+     TOS and Examples: 
+     General Username for Art Accounts: CarpathianLion <br>
+    <div class="row artlinks">
+
+  <div class="column-art col-3 "> 
+       <a href="https://www.instagram.com/carpathianlion/?hl=en" target="_BLANK">
+        <i class="fa-brands fa-instagram fa-fw fa-2x"></i>
+    </a></div> 
+     
+      <div class="column-art col-3 ">     
+  <a href="https://www.deviantart.com/carpathianlion"  target="_BLANK">
+    <i class="fab fa-deviantart fa-fw fa-2x "></i>
+  </a></div>
+
+  <div class="column-art col-3 "> 
+  <a href="https://twitter.com/carpathianlion"  target="_BLANK">
+    <i class="fab fa-twitter fa-fw fa-2x "></i>
+  </a></div>
+
+  <div class="column-art col-3 "> 
+  <a href="https://toyhou.se/CarpathianLion"  target="_BLANK">
+    <i class="fa-solid fa-house fa-2x "></i>
+  </a></div>
+
+  <!-- <div class="column-art col-3 "> 
+  <a href="https://www.twitch.tv/maybeaplatypus"  target="_BLANK">
+    <i class="fab fa-twitch fa-fw fa-2x "></i>
+  </a></div> -->
+
+  
+</div>
   
     </section>
 
