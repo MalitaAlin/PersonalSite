@@ -107,14 +107,14 @@ border-radius:55px 55px 35px 35px;
  border-radius:75px  75px 15px 15px  ;
 }
 
-.card-body{
+#title-box .card-body{
   width:100%;
-  margin-bottom:-2px;
-  min-width:480px;
+  min-width:320px;
+  margin:0 0 -2px 0;
 
 }
 
- .card-body .title-text{
+#title-box .card-body .title-text{
    width:50%;
    margin:-44px auto 8px auto;
     line-height:4;
@@ -150,18 +150,32 @@ font-size:2.1em;
   }
   
 #title-box .navbar{
-width:58%;
+width:55%;
 border-radius:20px;
-
-padding-right:12px;
-margin:0 0 0 21%;
+margin:0 20%;
 }
 
+#title-box .navbar-toggler{
+margin-right:10px;
+}
+
+.mainmenu, #title-box .navbar-nav{
+  padding:0;
+  margin:0;
+  position:relative;
+  right:45px;
+  width:105%;
+    }
+
+
+ #title-box .nav-tabs{
+border:0;
+ }
+      
 #sectionbar .btn-secondary{
   background-color:#212529;
-
-margin:8px 0 8px 0;
 border:0;
+padding:5px;
 }
 
 #sectionbar  .btn-secondary:hover,#sectionbar  .btn-secondary:focus{
@@ -172,31 +186,31 @@ color:#050606;
 
 @media (min-width:1200px) {
   .navbar-brand{
-    margin:0 10% 0 15px;
-  padding-right:16%;
+    margin:0 9% 0 15px;
+  padding-right:18%;
   }
-  .nav-item{
-    margin:0 15% 0 10%;
-    width:100%;
-    }
 
-    #sectionbar .btn-secondary{
-      width:150%;
-    }
+  .nav-item{
+    margin:0 5%;
+    width:100%;
+  min-width:150px; 
+}
 }
 
 @media (max-width:1200px) and (min-width:768px){
    
   .navbar-brand{
-    margin:0 10% 0 15px;
-    padding-right:6%;
-
+    margin:0 0 0 15px;
   }
+  .mainmenu, #title-box .navbar-nav{
+    right:5px;
+    width:95%;
+      }
 
   .nav-item{
-    
-    padding:5px;
-    width:auto;
+    margin:0 5%;
+    width:100%;
+  min-width:90px;
     }
     
 }
@@ -206,15 +220,20 @@ color:#050606;
     margin:0 10% 0 15px;
     font-size:1rem;
   }
+
+  .mainmenu{
+    margin:0 50%;
+  }
   .nav-item{
-padding-left:0;
+   width:100%;
+   min-width:150px;
     }
 
 }
 
 @media  (max-width:470px) {
   .card-body .title-text{
-    
+    font-size:0.8rem;
   }
 }
 
@@ -277,8 +296,22 @@ text-align:center;
   margin:30px 0;
 }
 
-.tab-content{
-  
+.nav-pills{
+  width:15%;
+}
+
+.tab-skills{
+  width:85%;
+}
+
+.tab-site{
+padding:0;
+margin:5px 20% 15px 20%;
+}
+
+.sitethumbnail{
+  width:75%;
+  height:75%;
 }
 
 /**Art Section *************/
@@ -445,6 +478,10 @@ img.hover-shadow {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
+.artlinks-title{
+  color: #4f59ade6;
+  letter-spacing:1.1;
+}
 
 .row.artlinks{
   position:relative;
@@ -455,11 +492,11 @@ img.hover-shadow {
   background:#f1efefcc;
   border-radius:15px;
   box-shadow:5px 5px 5px 5px  #b8b7b776;
-  margin:5px;
+  margin:6px;
 }
 
 .column-art a{
-  color: #525da7;
+  color: #475191;
   top:6px;
   bottom:5px;
   position:relative;
@@ -476,4 +513,5 @@ img.hover-shadow {
 
 .column-art i:hover,.column-art i:focus{
   box-shadow:5px 5px 5px 5px  #b8b7b776;
+  color: #75bcff;
 }

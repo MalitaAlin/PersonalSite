@@ -44,134 +44,154 @@
     </div> 
   </div> 
 
-  <div class="card-footer"> 
+  <div class="card-footer">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="navbar-brand">Sections</div> <!--Navbar title-->
       <!--Navbar adaptable to screen size with toggle for small screen-->
-      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#sectionbar" aria-controls="sectionbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" ></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sectionbar" aria-controls="#sectionbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="sectionbar">
+
     <!--Navbar content-->
+    <div class="mainmenu nav navbar-collapse collapse nav-tabs justify-content-center" id="sectionbar" >
       <ul class="navbar-nav "> 
         <li class=" nav-item">
-        <button class=" btn btn-secondary " onclick="location.href='#homesection'" type="button"> About Me <i class="fa-solid fa-house"></i></button> </li>
-        <li class=" nav-item">
-          <button class="btn btn-secondary " onclick="location.href='#codesection'" type="button"> Programming <i class="fa-solid fa-laptop-code"></i></button></li>
-        <li class=" nav-item">
-          <button class=" btn btn-secondary" onclick="location.href='#artsection'" type="button"> Art <i class="fa-solid fa-pen-to-square"></i></button></li> </ul>
+        <button class="btn-secondary nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          About Me <i class="fa-solid fa-house"></i> </button> </li>
+            <li class=" nav-item">
+        <button class="btn-secondary nav-link" id="nav-code-tab" data-bs-toggle="tab" data-bs-target="#nav-code" type="button" role="tab" aria-controls="nav-code" aria-selected="false">
+          Programming <i class="fa-solid fa-laptop-code"></i> </button></li>
+          <li class=" nav-item">
+          <button class="btn-secondary nav-link" id="nav-art-tab" data-bs-toggle="tab" data-bs-target="#nav-art" type="button" role="tab" aria-controls="nav-art" aria-selected="false">
+          Art <i class="fa-solid fa-pen-to-square"></i></button></li>
+        </ul>
+      </div>
+    </nav>
+</div> <!--Navbar content END-->
+
+<div class="tab-content tab-section" id="nav-tabContent"><!--Tab content -->
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <section id="homesection" class=" container-fluid">
+      About 
+      Romanian student at UTCN
+      Hobbies: art, biology, chemistry, nature in general. Great fondness for animals . 
+      Programming has its own charm. <i class="fa-solid fa-mushroom" ></i> 
+      <h3>Interests:</h3>  <i class="fa-solid fa-angles-right"></i> Zoology, Mushrooms and Plants
+      <br><i class="fa-solid fa-angles-right"></i>Fantasy and Sci-Fi works, movies, books
+      <br><i class="fa-solid fa-angles-right"></i>Games such as Pokemon, Hollow Knight, Subnautica etc.
+      <br><i class="fa-solid fa-angles-right"></i>Animation and animated content
+      <br><i class="fa-solid fa-angles-right"></i>Character and monster design, worldbuilding</p>
+       <!-- Moodboard --------------->
+     <div class="card  bg-light p-2 mb-5 interest-box border-0" >
+      <div class="row no-gutters">
+      <div class="col-6 col-lg-3 p-2">
+      <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80); "></div>
+      </div>
+    
+      <div class="col-6 col-lg-3 p-2">
+      <div class="w-100 bg-faded interest-img" style="padding-bottom: 100%; 
+          background-image: url(https://images.unsplash.com/photo-1598525317424-bc58218b48cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYXZlbGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); 
+      background-size: cover; background-position: center; border-radius: 8px;"></div>
+      </div>
+    
+      <div class="col-6 col-lg-3 p-2">
+      <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
+      </div>
+    
+      <div class="col-6 col-lg-3 p-2">
+      <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1573350926865-cf0d512fd504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
+      </div> 
+     </div>
+    </div>
+    </section>
+  </div>
+
+  <div class="tab-pane fade" id="nav-code" role="tabpanel" aria-labelledby="nav-codetab">
+    <section id="codesection" class=" container-fluid">
+
+      <div class="sectiontitle"> <h2>Digital competences</h2></div>
+    
+      <div> Through college education, as well as autodidactic means, I acquired skills in various relevant programs.  Studying system engineering at UTCN</div>
+      <div class='nav flex-row'>
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Programming</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Web development</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Other skills</a>
+      </div>
+    
+      <div class="tab-content tab-skills" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+    
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header codeitem">Programming in the following languages, with a grasp on the following programming principles </div>
+             <div class="card-body"> C, C++  - Algoritms
+            <br> Java - OOP </div>
+            </div>
+          </div>
+    
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header codeitem">Web development</div>
+          
+           <div class="card-body"> Front-End Development - HTML, CSS, Javascript, Bootstrap,jQuery
+            <img style="width:60px; height:60px;" src="image/digital/css.png" alt="Microsoft Office">
+            <img  style="width:60px; height:60px;"  src="image/digital/html5.png" alt="Microsoft Office">
+            <img  style="width:60px; height:60px;"  src="image/digital/javascript.png" alt="Microsoft Office">
+            <img  style="width:60px; height:60px;"  src="image/digital/bootstrap.png" alt="Microsoft Office">
+           <br> Back-End development - MySQL , Node.js + Express</div>
+           </div>
+          </div>
+    
+    
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header codeitem">Other Skills </div>
+              <div class="card-body">Microsoft Word, Powerpoint, Excel
+                <img  style="width:60px; height:60px;" src="image/digital/microsoft-office.jpg" alt="Microsoft Office">
+              <br>AutoCAD
+              </div> 
+            </div>
+      </div>
+    </div>
+    </div>
+    <div> <h3>Github Projects: </h3>
+      <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-dice-tab" data-bs-toggle="tab" data-bs-target="#nav-dice" type="button" role="tab" aria-controls="nav-dice" aria-selected="true">
+            ReadySetRoll <i class="fa-solid fa-dice"></i> </button>
+          <button class="nav-link" id="nav-pokemon-tab" data-bs-toggle="tab" data-bs-target="#nav-pokemon" type="button" role="tab" aria-controls="nav-pokemon" aria-selected="false">
+            Pokemon MiniGame <i class="fa-solid fa-arrows-up-down"></i> </button>
+          <button class="nav-link" id="nav-highlow-tab" data-bs-toggle="tab" data-bs-target="#nav-highlow" type="button" role="tab" aria-controls="nav-highlow" aria-selected="false">
+            HigherLowerGame <i class="fa-solid fa-arrows-up-down"></i></button>
         </div>
-    </nav> </div>
-
-</div> 
-
-
-</section>
-
-
-<section id="homesection" class=" container-fluid">
-  About 
-  Romanian student at UTCN
-  Hobbies: art, biology, chemistry, nature in general. Great fondness for animals . 
-  Programming has its own charm. <i class="fa-solid fa-mushroom" ></i> 
-  <h3>Interests:</h3>  <i class="fa-solid fa-angles-right"></i> Zoology, Mushrooms and Plants
-  <br><i class="fa-solid fa-angles-right"></i>Fantasy and Sci-Fi works, movies, books
-  <br><i class="fa-solid fa-angles-right"></i>Games such as Pokemon, Hollow Knight, Subnautica etc.
-  <br><i class="fa-solid fa-angles-right"></i>Animation and animated content
-  <br><i class="fa-solid fa-angles-right"></i>Character and monster design, worldbuilding</p>
-   <!-- Moodboard --------------->
- <div class="card  bg-light p-2 mb-5 interest-box border-0" >
-  <div class="row no-gutters">
-  <div class="col-6 col-lg-3 p-2">
-  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80); "></div>
-  </div>
-
-  <div class="col-6 col-lg-3 p-2">
-  <div class="w-100 bg-faded interest-img" style="padding-bottom: 100%; 
-      background-image: url(https://images.unsplash.com/photo-1598525317424-bc58218b48cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYXZlbGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); 
-  background-size: cover; background-position: center; border-radius: 8px;"></div>
-  </div>
-
-  <div class="col-6 col-lg-3 p-2">
-  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
-  </div>
-
-  <div class="col-6 col-lg-3 p-2">
-  <div class="w-100 bg-faded interest-img" style="background-image: url(https://images.unsplash.com/photo-1573350926865-cf0d512fd504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); "></div>
-  </div> 
- </div>
-</div>
-  
- Contact: github page, gmail account
- https://carpathianlion.carrd.co/
-
-</section>
-
-
-
-<section id="codesection" class=" container-fluid">
-
-  <div class="sectiontitle"> <h2>Digital competences</h2></div>
-
-  <div> Through college education, as well as autodidactic means, I acquired skills in various relevant programs.  Studying system engineering at UTCN</div>
-  <div class='nav flex-row'>
-  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Programming</a>
-    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Web development</a>
-    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Other skills</a>
-  </div>
-
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-
-      <div class="card text-dark bg-light mb-3">
-        <div class="card-header codeitem">Programming in the following languages, with a grasp on the following programming principles </div>
-         <div class="card-body"> C, C++  - Algoritms
-        <br> Java - OOP </div>
+      </nav>
+    
+    
+      <div class="tab-content tab-site " id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-dice" role="tabpanel" aria-labelledby="nav-dice-tab">
+          <a href="https://not-a-platypus.github.io/ReadySetRoll/"> <img class="sitethumbnail" src="image/digital/sitethumb1.png" alt="Sitethumb1"></a>
+        </div>
+        <div class="tab-pane fade" id="nav-pokemon" role="tabpanel" aria-labelledby="nav-pokemon-tab">
+          <a href="https://not-a-platypus.github.io/PokemonHighLow/"> <img class="sitethumbnail" src="image/digital/sitethumb2.png" alt="Sitethumb2"></a>
+        </div>
+        <div class="tab-pane fade" id="nav-highlow" role="tabpanel" aria-labelledby="nav-highlow-tab">
+          <a href=" https://github.com/Not-A-Platypus/HighLow" > <img class="sitethumbnail" src="image/digital/sitethumb3.png" alt="Sitethumb3"> </a>
         </div>
       </div>
-
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-      <div class="card text-dark bg-light mb-3">
-        <div class="card-header codeitem">Web development</div>
-      
-       <div class="card-body"> Front-End Development - HTML, CSS, Javascript, Bootstrap,jQuery
-        <img style="width:60px; height:60px;" src="image/digital/css.png" alt="Microsoft Office">
-        <img  style="width:60px; height:60px;"  src="image/digital/html5.png" alt="Microsoft Office">
-        <img  style="width:60px; height:60px;"  src="image/digital/javascript.png" alt="Microsoft Office">
-        <img  style="width:60px; height:60px;"  src="image/digital/bootstrap.png" alt="Microsoft Office">
-       <br> Back-End development - MySQL , Node.js + Express</div>
-       </div>
-      </div>
-
-
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-      <div class="card text-dark bg-light mb-3">
-        <div class="card-header codeitem">Other Skills </div>
-          <div class="card-body">Microsoft Word, Powerpoint, Excel
-            <img  style="width:60px; height:60px;" src="image/digital/microsoft-office.jpg" alt="Microsoft Office">
-          <br>AutoCAD
-          </div> 
-        </div>
+    
+    
+      Contact me regarding programming or web development here github / gmail
+    </div>
+    
+    </section>
   </div>
-</div>
 
-<div> <h3>Github Projects: </h3>
-  <a href="https://not-a-platypus.github.io/ReadySetRoll/">ReadySetRoll<i class="fa-solid fa-dice"></i>  </a>
-  <a href=" https://github.com/Not-A-Platypus/HighLow" >HigherLowerGame ----<i class="fa-solid fa-arrows-up-down"></i></a>
-<a href="https://not-a-platypus.github.io/PokemonHighLow/"> --- Pokemon MiniGame ----<i class="fa-solid fa-arrows-up-down"></i> </a>
-  Contact me regarding programming or web development here 
-</div>
-</div>
-</section>
-
-
+  <div class="tab-pane fade" id="nav-art" role="tabpanel" aria-labelledby="nav-art-tab">
 <section id="artsection" class="art-box">
   <!-- Images used to open the lightbox -->
   <div class="sectiontitle">Art Gallery</div>
 <!-- Art Images + captions sections-->
-  <div class="row">
+  <div class="row d-flex flex-wrap align-items-center">
 
     <div class="column-art col-lg-2  col-md-4 col-sm-4">
       <img src="image/art/img1.jpg" onclick="openModal();currentSlide(1)" class="gallery-item hover-shadow">
@@ -185,11 +205,11 @@
       <img src="image/art/img3.jpg" onclick="openModal();currentSlide(3)" class="gallery-item hover-shadow">
     </div>   <div hidden class="captions"><h3>Fungi-Encyclopedia</h3>  <h4> - Part2 - Fantasy -  </h4><h6>Posted on 5.02.2022</h6> </div>
     
-    <div class="column-art  col-lg-3 col-md-4 col-sm-4">
+    <div class="column-art  col-lg-3 col-md-6 col-sm-6">
       <img src="image/art/img4.jpg" onclick="openModal();currentSlide(4)" class="gallery-item hover-shadow">
     </div>  <div hidden class="captions"><h3>Elder Glutton Beast</h3> <h4> -Fantasy-  </h4> <h6>Posted on 28.11.2021</h6></div>
     
-    <div class="column-art  col-lg-3 col-md-4 col-sm-4">
+    <div class="column-art  col-lg-3 col-md-6 col-sm-6">
       <img src="image/art/img5.jpg" onclick="openModal();currentSlide(5)" class="gallery-item hover-shadow horizontalImg">
     </div>  <div hidden class="captions"><h3>Tower Bench</h3>  <h4> -Fantasy-  </h4><h6>Posted on 9.09.2021</h6> </div>
    
@@ -197,7 +217,7 @@
       <img src="image/art/img6.jpg" onclick="openModal();currentSlide(6)" class="gallery-item hover-shadow">
     </div>  <div hidden class="captions"><h3>Under Many Eyes</h3>  <h4> -Fantasy-  </h4> <h6>Posted on 23.06.2021</h6></div>
    
-    <div class="column-art  col-lg-3 col-md-4 col-sm-4">
+    <div class="column-art  col-lg-3 col-md-6 col-sm-6">
       <img src="image/art/img7.jpg" onclick="openModal();currentSlide(7)" class="gallery-item hover-shadow">
     </div> <div hidden class="captions"><h3>Fight with a giant</h3>  <h4> -Fantasy-  </h4> <h6>Posted on 2.06.2021</h6></div>
   
@@ -221,7 +241,7 @@
       <img src="image/art/img12.jpg" onclick="openModal();currentSlide(12)" class="gallery-item  hover-shadow horizontalImg">
     </div> <div hidden class="captions"><h3>White Rot Titan</h3>  <h4> -Fantasy-  </h4> <h6>Posted on 14.12.2020</h6></div>
 
-    <div class="column-art  col-lg-3 col-md-4 col-sm-4">
+    <div class="column-art  col-lg-3 col-md-6 col-sm-6">
       <img src="image/art/img13.jpg" onclick="openModal();currentSlide(13)" class="gallery-item  hover-shadow horizontalImg">
     </div> <div hidden class="captions"><h3>Blood-shroom Dragon</h3>  <h4> -Fantasy-  </h4> <h6>Posted on 10.11.2020</h6></div>
 
@@ -272,11 +292,11 @@
   </div> 
 </div>
      <!-- SOCIAL MEDIA LINKS -- use "font awesome" icons -- erase or add icons & links based on what you need -->
-     Commission Status: Open
+     Commission Status: Open  https://carpathianlion.carrd.co/
      TOS and Examples: 
-     General Username for Art Accounts: CarpathianLion <br>
+    <br>
     <div class="row artlinks">
-
+     <h4 class="artlinks-title"> &#9830 Art Socials &#9830</h4>
   <div class="column-art col-3 "> 
        <a href="https://www.instagram.com/carpathianlion/?hl=en" target="_BLANK">
         <i class="fa-brands fa-instagram fa-fw fa-2x"></i>
@@ -306,6 +326,12 @@
 </div>
   
     </section>
+  </div>
+</div>
+
+
+
+</section>
 
   <footer>
  <h5>Malita Alin   &#169 2022</h5>
