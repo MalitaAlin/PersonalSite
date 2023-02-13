@@ -1,6 +1,5 @@
  // include sections as separate html files  
 
-
 // Open the Modal art gallery functions -- START
 function openModal() {
    $("#myModal").css("display","block");
@@ -10,7 +9,13 @@ function openModal() {
   function closeModal() {
     $("#myModal").css("display","none");
   }
-  
+
+ $(document).on('keydown', function(event) {
+       if (event.key == "Escape") {
+         closeModal();
+       }
+   });
+    
   var slideIndex = 1;
   showSlides(slideIndex);
   
@@ -19,11 +24,25 @@ function openModal() {
     showSlides(slideIndex += n);
   }
   
+  var locked = false;
+  $(document).on('keyup', function(event) {
+ 
+    if (event.keyCode == '39') {
+      plusSlides(1); //next - right arrow key
+    }
+    else if (event.keyCode == '37') {
+      plusSlides(-1); //prev- leftarrow key
+    } 
+
+});
+
   // Thumbnail image controls
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
   
+
+
 
   function showSlides(n) {
     var artgallery=$(".gallery-item");
@@ -73,6 +92,21 @@ for(var i=-2; i<=2; i++){ //for loop assigns the thumbnails under each Slide, so
   }
   //art gallery functions -- END
  
+
+
+
+
+  /*function myFunction() {
+    var moreText = $(".");;
+    var btnText = $(".");;
   
+    if (moreText.style.display === "inline") {
+      btnText.innerHTML = "Show more"; 
+      moreText.style.display = "none";
+    } else {
+      btnText.innerHTML = "Show less"; 
+      moreText.style.display = "inline";
+    }
+  } */
 
  
