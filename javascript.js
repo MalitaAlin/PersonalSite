@@ -96,17 +96,4 @@ for(var i=-2; i<=2; i++){ //for loop assigns the thumbnails under each Slide, so
 
 
 
-  /*function myFunction() {
-    var moreText = $(".");;
-    var btnText = $(".");;
-  
-    if (moreText.style.display === "inline") {
-      btnText.innerHTML = "Show more"; 
-      moreText.style.display = "none";
-    } else {
-      btnText.innerHTML = "Show less"; 
-      moreText.style.display = "inline";
-    }
-  } */
-
  
